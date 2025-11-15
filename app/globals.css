@@ -134,7 +134,7 @@
    PROJECT SHOWCASE STYLES
    =================================== */
 .marquee-track {
-  animation: marquee 60s linear infinite;
+  animation: marquee 20s linear infinite;
   will-change: transform;
 }
 
@@ -306,6 +306,20 @@
 
 .animate-bounce-down-2 {
   animation: bounceDown 3s ease-in-out 0.5s infinite;
+}
+
+/* Add to your globals.css */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
 }
 
 @keyframes bounceDown {

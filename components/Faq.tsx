@@ -8,88 +8,48 @@ import clsx from 'clsx';
 const faqItems = [
   {
     id: 1,
-    question: "What services do you offer?",
+    question: "What does Codiezz specialize in?",
     answer:
-      "We offer complete branding, UI/UX design, and web development — including landing pages, SaaS dashboards, Webflow/Framer/Next.js builds, and ongoing monthly design/dev support.",
+      "We build high-quality websites and web applications using Next.js, MERN stack, and modern UI/UX. Our services include portfolio websites, business sites, landing pages, custom client projects, and full-stack development."
   },
   {
     id: 2,
-    question: "How does the Monthly Retainer subscription work?",
+    question: "How long does it take to build a website with Codiezz?",
     answer:
-      "Think of it like a gym membership, but for design & dev. You pay a flat fee each month and get access to our team. We'll talk about what you need, make a plan, and then get to work. You'll get regular updates and can always reach out with new requests.",
+      "Simple websites (portfolio/landing pages) take 3–7 days. Full business websites or ecommerce platforms take 1–3 weeks depending on the features, integrations, and revisions."
   },
   {
     id: 3,
-    question: "What's the difference between the Monthly Subscription and Quick Launch?",
+    question: "What do you need from me to get started?",
     answer:
-      "<b>Monthly Subscription:</b> Like having designers and developers on your team. Pay monthly, get ongoing help, no contracts. You can ask for as many things as you want (we just do them one at a time).<br/><br/><b>Quick Launch:</b> Need just one thing done? This is perfect. You pay once, we do the work, and you're done. Great for single projects like 'I need a new website' or 'I need a logo.'",
+      "We just need your basic requirements, content (if available), and design references. If you don’t have content or design, we will create everything for you — from branding to UI/UX to final development."
   },
   {
     id: 4,
-    question: "How soon can you start working together?",
-    answer: "Typically within 3–7 days depending on current availability.",
+    question: "Do you provide monthly maintenance or support?",
+    answer:
+      "Yes. Codiezz offers optional monthly support plans that include updates, bug fixes, improvements, new pages, and ongoing development support."
   },
   {
     id: 5,
-    question: "What do you need to get started?",
+    question: "Can you build custom features for my business?",
     answer:
-      "Only 3 things: sign the proposal, agree to work together, and make your first payment. That's it! We keep it simple so we can start helping you quickly.",
+      "Absolutely. Whether it's user login, dashboards, admin panels, payment gateways, carts, booking systems, or custom workflows — we develop everything from scratch according to your business needs."
   },
   {
     id: 6,
-    question: "Can you work with tight deadlines?",
+    question: "What is your pricing structure?",
     answer:
-      "Yes — if you have a tight deadline, tell us upfront and we’ll prioritize your project accordingly.",
+      "Pricing depends on the project type. Landing pages start at affordable rates, while full-stack websites and ecommerce platforms vary based on complexity and integrations. After understanding your requirements, we share a clear quotation with no hidden charges."
   },
   {
     id: 7,
-    question: "What if I don't have brand guidelines or a clear brand identity?",
+    question: "How will we communicate during the project?",
     answer:
-      "No worries — we can create your brand from scratch. Logo, typography, color palette, and a full mini style guide.",
-  },
-  {
-    id: 8,
-    question: "What platforms and technologies do you use for website development?",
-    answer:
-      "We mainly use Framer, Webflow, and Next.js to build websites. These tools help us create fast, good-looking websites that are easy for you to manage.",
-  },
-  {
-    id: 9,
-    question: "How many requests can I make with the subscription?",
-    answer:
-      "Unlimited. We just work on them one at a time (or more, depending on your plan).",
-  },
-  {
-    id: 10,
-    question: "How do we communicate and collaborate during projects?",
-    answer:
-      "Slack + Figma + Loom. Quick async updates with weekly or bi-weekly calls depending on your plan.",
-  },
-  {
-    id: 11,
-    question: "How do I provide feedback on designs and deliverables?",
-    answer:
-      "You can comment directly in Figma, send us a Loom video, or drop feedback via Slack.",
-  },
-  {
-    id: 12,
-    question: "Do you handle copywriting, or do I need to provide content?",
-    answer:
-      "Yes — we handle copywriting. We write in your tone and ensure it matches your brand personality.",
-  },
-  {
-    id: 13,
-    question: "Can I pause or cancel my subscription anytime?",
-    answer:
-      "Absolutely. No contracts. Pause or cancel anytime — you keep all work delivered.",
-  },
-  {
-    id: 14,
-    question: "What's your refund policy?",
-    answer:
-      "We don't offer refunds, but you're free to pause or cancel anytime and keep all work done so far.",
-  },
+      "We stay connected through WhatsApp, Zoom/Google Meet calls, and regular project updates. You will get continuous progress reports and can request changes anytime during the project."
+  }
 ];
+
 
 // Accordion Toggle Icon
 const AccordionIcon = ({ isOpen }: { isOpen: boolean }) => (
@@ -145,7 +105,7 @@ export default function FAQ() {
           <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] font-medium text-dark-gray">
             <span>Questions?</span>
           </h2>
-          <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] font-medium text-dark-gray-50">
+          <h2 className="section-title font-suisse lg:text-[60px] text-[32px] leading-[42px] mt-20px font-medium text-dark-gray-50">
             <span>Answers.</span>
           </h2>
         </div>
@@ -202,19 +162,19 @@ export default function FAQ() {
 
           {/* ✅ Fixed: correct logo reference */}
           <div className="lg:col-span-3 relative hidden lg:flex">
-            <div className="bg-[url('/logo.png')] bg-dark-gray p-8 rounded-[24px] m-5 flex flex-col gap-9 items-start w-full bg-cover bg-center">
+            <div className="bg-[url('/logobg.png')] bg-dark-gray p-8 rounded-[24px] m-5 flex flex-col gap-2 items-start w-full bg-cover bg-center">
               <div className="rounded-[13px] overflow-hidden size-16 relative">
                 <Image
                   alt="Codiezz Logo"
                   fill
                   className="object-cover"
                   sizes="64px"
-                  src="/logo.png"
+                  src="/logobg.png"
                 />
               </div>
               <p className="font-suisse text-2xl leading-tight text-white max-w-[180px]">
-                Feel free to reach out whenever{" "}
-                <span className="text-[#A2A2A2]">you have questions.</span>
+                Feel free to reach out whenever you{" "}
+                <span className="text-[#000] bg-teal-400">have questions.</span>
               </p>
               <a
                 target="_blank"

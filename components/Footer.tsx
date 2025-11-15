@@ -68,8 +68,8 @@ export default function Footer() {
               loading="lazy"
               width={240}
               height={90}
-              className="opacity-90"
-              src="/footer.svg"  // Ensure footer.svg exists in /public
+              className="opacity-90 bg-white rounded-2xl"
+              src="/logoname.png"  // Ensure footer.svg exists in /public
             />
 
             {/* Social links */}

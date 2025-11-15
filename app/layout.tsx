@@ -127,7 +127,7 @@ export default function RootLayout({
       >
         <Providers>
           <SkipToContent />
-          <BackgroundDecoration />
+          {/* <BackgroundDecoration /> */}
 
           <div className="flex min-h-screen flex-col">
             <Header />

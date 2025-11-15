@@ -5,27 +5,45 @@ import Image from 'next/image';
 
 const projects = [
   { 
-    src: "https://cdn.prod.website-files.com/675aaa451de0011e537740d8/686faa4e59dedd05a09bcb3f_raspa.webp", 
-    alt: "Raspa Website Design", 
-    caption: "Raspa Website Design", 
+    src: "/careerpath.png", 
+    alt: "careerpath site", 
+    caption: "Career Path Website", 
     widthLarge: 750, 
     widthSmall: 562,
     heightLarge: 495,
     heightSmall: 370
   },
   {
-    src: "https://cdn.prod.website-files.com/675aaa451de0011e537740d8/686faa4e9f8d3a2e1b5c4d3e_project2.webp",
-    alt: "Project Two Design",
-    caption: "Project Two Design",
+    src: "/doda1.png",
+    alt: "Doda Properties Website",
+    caption: "Doda Properties Website",
     widthLarge: 750,
     widthSmall: 562,
     heightLarge: 495,
     heightSmall: 370
   },
   {
-    src: "https://cdn.prod.website-files.com/675aaa451de0011e537740d8/686faa4eabc1d2e3f4g5h6i_project3.webp",
-    alt: "Project Three Design",
-    caption: "Project Three Design",
+    src: "/mess1.png",
+    alt: "Suvarna Mess Services",
+    caption: "Suvarna Mess Services",
+    widthLarge: 750,
+    widthSmall: 562,
+    heightLarge: 495,
+    heightSmall: 370
+  },
+  {
+    src: "/shravan1.png",
+    alt: "Shravan Electricals Website",
+    caption: "Shravan Electricals Website",
+    widthLarge: 750,
+    widthSmall: 562,
+    heightLarge: 495,
+    heightSmall: 370
+  },
+  {
+    src: "/preplyte1.png",
+    alt: "Preplyte",
+    caption: "Preplyte",
     widthLarge: 750,
     widthSmall: 562,
     heightLarge: 495,
@@ -92,13 +110,13 @@ export default function ProjectShowcase() {
                     style={{ width: `${project.widthLarge}px` }}
                   >
                     {/* Desktop Image Container */}
-                    <div className="relative rounded-xl overflow-hidden shadow-sm bg-F1F5F9 h-[370px] md:h-[495px] tab-img-wrap">
+                    <div className="relative rounded-xl overflow-hidden shadow-sm bg-F1F5F9 h-[333px] md:h-[445px] tab-img-wrap">
                       <Image
                         alt={project.alt}
                         loading={index < 3 ? "eager" : "lazy"}
                         width={project.widthLarge}
                         height={project.heightLarge}
-                        className="object-contain w-full h-full"
+                        className="object-cover w-full h-full"
                         src={project.src}
                       />
                     </div>
@@ -121,13 +139,13 @@ export default function ProjectShowcase() {
                   style={{ width: `${project.widthSmall}px` }}
                 >
                   {/* Mobile Image Container */}
-                  <div className="h-[370px] overflow-hidden shadow-sm rounded-xl bg-F1F5F9 relative tab-img-wrap">
+                  <div className="h-[333px] overflow-hidden shadow-sm rounded-xl bg-F1F5F9 relative tab-img-wrap">
                     <Image
                       alt={project.alt}
                       loading="lazy"
                       width={project.widthSmall}
                       height={project.heightSmall}
-                      className="object-contain w-full h-full"
+                      className="object-cover w-full h-full"
                       src={project.src}
                     />
                   </div>

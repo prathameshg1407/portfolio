@@ -46,55 +46,127 @@ const ServiceIcon = ({ iconKey }: { iconKey: string }) => {
 // --- Services Data ---
 const services = [
   {
-    icon: 'brand',
-    title: 'Brand Identity',
-    images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e791a46a6988998b800_Brand%20Identity%2001.avif', alt: 'Echo Ai Brand Identity', rotation: '-rotate-4', zIndex: 'z-20' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e78beffb341585f4927_Brand%20Identity%2002.png', alt: 'Dockin Brand Identity', rotation: 'rotate-4', zIndex: 'z-10', top: '-top-6', left: 'left-[22%]' },
-    ],
-  },
-  {
     icon: 'website',
-    title: 'Website Design',
+    title: 'Website Development',
     images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e795e58f6f18e944761_Website%20design%2002.avif', alt: 'Website Design Example 1', rotation: '-rotate-4', zIndex: 'z-10' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e791f395f045567453f_Website%20design%2001.avif', alt: 'Website Design Example 2', rotation: 'rotate-4', zIndex: 'z-20', top: 'bottom-7', left: 'left-[25%]' },
+      {
+        src: '/careerpath.png',
+        alt: 'Website Development Showcase 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/preplyte1.png',
+        alt: 'Website Development Showcase 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: '-top-6',
+        left: 'left-[22%]',
+      },
     ],
   },
   {
     icon: 'product',
-    title: 'Product Design',
+    title: 'Mobile App Development',
     images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e78e6c6a0608b939d1c_Product%20design%2001.avif', alt: 'Product Design Example 1', rotation: '-rotate-4', zIndex: 'z-20' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e788e0a77e2bf0533d6_Product%20design%2002.avif', alt: 'Product Design Example 2', rotation: 'rotate-4', zIndex: 'z-10', top: 'bottom-2', left: 'left-[14%]' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e7894f38b33d0014649_Product%20design%2003.png', alt: 'Product Design Example 3', rotation: 'rotate-8', zIndex: 'z-0', top: 'bottom-[12px]', left: 'left-[26%]' },
+      {
+        src: '/careerpath2.png',
+        alt: 'Mobile App Development 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/preplyte2.png',
+        alt: 'Mobile App Development 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: 'bottom-7',
+        left: 'left-[25%]',
+      },
+    ],
+  },
+  {
+    icon: 'brand',
+    title: 'UI/UX Design',
+    images: [
+      {
+        src: '/careerpath3.png',
+        alt: 'UI/UX Design Showcase 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/preplyte3.png',
+        alt: 'UI/UX Design Showcase 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: 'bottom-2',
+        left: 'left-[14%]',
+      },
     ],
   },
   {
     icon: 'nocode',
-    title: 'No-code Development',
+    title: 'AI & Automation',
     images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e79d07f6199256cdcbc_No-code%20development%2001.avif', alt: 'No-code Example 1', rotation: '-rotate-4', zIndex: 'z-20' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e797ed568833799f8f2_No-code%20development%2002.avif', alt: 'No-code Example 2', rotation: 'rotate-4', zIndex: 'z-10', top: 'bottom-7', left: 'left-[25%]' },
+      {
+        src: '/mess1.png',
+        alt: 'AI Automation Showcase 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/doda1.png',
+        alt: 'AI Automation Showcase 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: 'bottom-7',
+        left: 'left-[25%]',
+      },
     ],
   },
   {
     icon: 'marketing',
-    title: 'Marketing Materials',
+    title: 'IT & Cloud Solutions',
     images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e784a873d746597aa6b_Marketing%20Materials%2001.avif', alt: 'Marketing Example 1', rotation: '-rotate-4', zIndex: 'z-20' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e79b941bfeec564ecb0_Marketing%20Materials%202.avif', alt: 'Marketing Example 2', rotation: 'rotate-4', zIndex: 'z-10', top: '-top-6', left: 'left-[22%]' },
+      {
+        src: '/shravan1.png',
+        alt: 'Cloud Solutions Showcase 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/mess3.png',
+        alt: 'Cloud Solutions Showcase 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: '-top-6',
+        left: 'left-[22%]',
+      },
     ],
   },
   {
-    icon: 'pitch',
-    title: 'Pitch Decks',
+    icon: 'website',
+    title: 'E-Commerce Platforms',
     images: [
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e79e083265006b75897_Pitch%20Decks%2001.avif', alt: 'Pitch Deck Example 1', rotation: '-rotate-4', zIndex: 'z-20' },
-      { src: 'https://cdn.prod.website-files.com/675aaa451de0011e537740d8/689b0e79e3fa2bb986c26180_Pitch%20Decks%2002.avif', alt: 'Pitch Deck Example 2', rotation: 'rotate-4', zIndex: 'z-10', top: 'bottom-7', left: 'left-[25%]' },
+      {
+        src: '/shravan2.png',
+        alt: 'Ecommerce Showcase 1',
+        rotation: '-rotate-4',
+        zIndex: 'z-20',
+      },
+      {
+        src: '/mess2.png',
+        alt: 'Ecommerce Showcase 2',
+        rotation: 'rotate-4',
+        zIndex: 'z-10',
+        top: '-top-6',
+        left: 'left-[22%]',
+      },
     ],
   },
 ];
+
 
 export default function Services() {
   return (
